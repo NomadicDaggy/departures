@@ -1,3 +1,5 @@
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js
 
 function makeChordChart(route) {
   var width         = 720,
@@ -52,7 +54,8 @@ function makeChordChart(route) {
 
     // Add a mouseover title.
     group.append("title").text(function(d, i) {
-      return airports[i] + ": " + formatPercent(d.value) + " of origins"; });
+      return airports[i] + ": " + formatPercent(d.value) + " of origins";
+    });
 
     // Add the group arc.
     var groupPath = group.append("path")

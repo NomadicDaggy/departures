@@ -1,4 +1,4 @@
-class CreateAaDepartures < ActiveRecord::Migration[5.0]
+class CreateAaDeparturesAgain < ActiveRecord::Migration[5.0]
   def up
     sql = <<-SQL.strip_heredoc
       CREATE MATERIALIZED VIEW aa_departures AS (
@@ -31,5 +31,5 @@ class CreateAaDepartures < ActiveRecord::Migration[5.0]
 
   def down
     execute("DROP MATERIALIZED VIEW aa_departures;")
-  end
+	end
 end
