@@ -17,7 +17,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rails_12factor'
 gem 'newrelic_rpm'
 gem 'lograge'
-
+gem 'scenic'
+gem 'activerecord-postgis-adapter'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
