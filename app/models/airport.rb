@@ -4,18 +4,18 @@ class Airport < ActiveRecord::Base
 	end
 	before_create :set_lonlat
 
-	def longtitude
+	def longitude
 		long
 	end
 	def latitude
 		lat
 	end
 	def lonlat
-		Factories::GEO.point(longtitude, latitude)
+		Factories::GEO.point(longitude, latitude)
 	end
 
 	private
 	def set_lonlat
-		self.lonlat = Factories::GEO.point(longtitude, latitude)
+		self.lonlat = Factories::GEO.point(longitude, latitude)
 	end
 end
